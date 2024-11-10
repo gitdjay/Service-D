@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { ethers } from "ethers"; // Ensure proper import of ethers
 import "./App.css";
 
-const contractAddress = 0xac0ee857926b09cd08158540915e06d1dbc73999;
+const contractAddress = process.env.REACT_APP_CONTRACT_ADDRESS;
+console.log("Contract Address:", contractAddress);
 const contractABI = [
   {
     inputs: [],
